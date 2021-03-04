@@ -24,9 +24,9 @@ def render_response():
         answer2 = request.args['answer2']
         if answer2== 'comedy':
             reply = "I prefer comedy because I like to laugh, but horror movies are still fun to watch"
-        if answer2== 'horror':
+        else answer2== 'horror':
             reply = "That's cool! Did you know that my friend starred in La Larona. If you haven't watched it it's pretty scary."
-            return rendertemplate('response.html', response = reply)
+        return rendertemplate('response.html', response = reply)
         
         
                      
