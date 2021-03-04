@@ -19,6 +19,16 @@ def render_response():
     else:
         reply = "Good to know because I do like movies"
     return render_template('response.html', response = reply)
-    
+    @app.route("/response2")
+    def render_response2():
+        answer2 = request.args['answer2']
+        if answer2== 'comedy':
+            reply = "I prefer comedy because I like to laugh, but horror movies are still fun to watch"
+        if answer2== 'horror':
+            reply = "That's cool! Did you know that my friend starred in La Larona. If you haven't watched it it's pretty scary."
+            return rendertemplate('response.html', response = reply)
+        
+        
+                     
 if __name__=="__main__":
     app.run(debug=False, port=54321)
