@@ -5,9 +5,7 @@ app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  
 @app.route("/")
 def render_main():
     return render_template('home.html')
-    return render_template('home2.html')
-
-
+   
 @app.route("/response")
 def render_response():
     answer1 = request.args['answer1'] 
@@ -19,6 +17,11 @@ def render_response():
     else:
         reply = "Good to know because I do like movies"
     return render_template('response.html', response = reply)
+
+@app.route("/")
+def render_main():
+    return render_template('home2.html')
+
 @app.route("/response2")
 def render_response2():
     answer2 = request.args['answer2']
