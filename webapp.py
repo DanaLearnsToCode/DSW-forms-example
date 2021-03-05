@@ -18,7 +18,7 @@ def render_response():
         reply = "Good to know because I do like movies"
     return render_template('response.html', response = reply)
 
-@app.route("/")
+@app.route("/home2.html")
 def render_main():
     return render_template('home2.html')
 
