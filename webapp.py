@@ -14,9 +14,10 @@ def render_response():
     #The information in args is visible in the url for the page being requested. ex. .../response?color=blue
     if answer1 == 'yes':
         reply = "I like movies, too!"
+        return render_template('response.html', response = reply)
     else:
         reply = "Good to know because I do like movies"
-    return render_template('response.html', response = reply)
+        return render_template('response2.html', response = reply)
 
 #@app.route("/home2.html")
 #def render_main():
