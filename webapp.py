@@ -22,16 +22,16 @@ def render_response():
 @app.route("/response2")
 def render_response2():
     answer2 = request.args['answer2']
-    if answer2 == "horror"
+    if answer2 == "horror":
         reply = "That's cool! My friend was one of the main actors in La Larona. If you haven't watched it it's pretty scary."
         return render_template('response31.html', response = reply)
-    if answer2 == "comedy"
+    if answer2 == "comedy":
         reply = "I also prefer comedy because I like to laugh, but horror movies are still fun to watch"
         return render_template('response32.html', response = reply)
-    if answer2 == "yes"
+    if answer2 == "yes":
          reply = "I'm also a sports person."
          return render_template('response33.html', response = reply)
-    if answer2 == "no"
+    if answer2 == "no":
          reply = "Wow! most people I know play sports, so this is very cool."
          return render_template('response34.html', response = reply)
             
