@@ -31,6 +31,7 @@ def render_moviesYes():
     
 @app.route("/moviesNo")
 def render_moviesNo():
+    answer2 = request.args['answer2']
     if answer2 == "yes":       
          reply = "I'm also a sports person."
          return render_template('response33.html', response = reply)
