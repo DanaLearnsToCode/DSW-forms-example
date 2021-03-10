@@ -23,15 +23,15 @@ def render_response():
 def render_response2():
     answer2 = request.args['answer2']
     if answer2 == "horror":
-        final1 = "horror1'
+        final1 = "horror1"
         reply = "That's cool! My friend was one of the main actors in The Curse of La Llorona. If you haven't watched it it's pretty scary."
         return render_template('response31.html', response = reply)
     if answer2 == "comedy":
-        final1 = "comedy1'
+        final1 = "comedy1"
         reply = "I also prefer comedy because I like to laugh, but horror movies are still fun to watch"
         return render_template('response32.html', response = reply)
     if answer2 == "yes":
-         final1 = "yes1'
+         final1 = "yes1"
          reply = "I'm also a sports person."
          return render_template('response33.html', response = reply)
     if answer2 == "no":
