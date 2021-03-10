@@ -34,8 +34,26 @@ def render_response2():
     if answer2 == "no":
          reply = "Wow! most people I know play sports, so this is very cool."
          return render_template('response34.html', response = reply)
-            
 
+@app.route("/response3")    
+def render_response3():
+    if answer2 == "horror":
+        reply = "I'll have to watch"[answer3]"sometime, thanks for talking with me."
+        return render_template('finalresponse1.html', response = reply)
+    if answer2 == "comedy":
+        reply = "I'm not sure I have watched"[answer3]",but it must be a good movie. Thanks for talking with me"
+        return render_template('finalresponse1.html', response = reply)
+    if answer2 == "yes":
+         reply = "My favorite sport is Surfing, but I should play"[answer3]"sometime. Thanks for talking with me"
+         return render_template('finalresponse1.html', response = reply)
+    if answer2 == "no":
+         reply = [answer3]"sounds pretty fun, thanks for talking with me.
+         return render_template('finalresponse1.html', response = reply)
+
+    
+    
+    
+    
 #@app.route("/home2.html")
 #def render_main():
 #    return render_template('home2.html')
