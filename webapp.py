@@ -48,7 +48,7 @@ def render_response3():
          reply = "My favorite sport is Surfing, but I should play"+answer3+"sometime. Thanks for talking with me"
          return render_template('finalresponse1.html', response = reply)
     if answer2 == "no":
-         reply = answer3+"sounds pretty fun, thanks for talking with me.
+         reply = answer3+"sounds pretty fun, thanks for talking with me."
          return render_template('finalresponse1.html', response = reply)
 
     
