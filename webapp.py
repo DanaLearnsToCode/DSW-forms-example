@@ -37,7 +37,7 @@ def render_response2():
 
 @app.route("/response3")    
 def render_response3():
-answer2 = request.args['answer3']
+answer3 = request.args['answer3']
     if answer2 == "horror":
         reply = "I'll have to watch"[answer3]"sometime, thanks for talking with me."
         return render_template('finalresponse1.html', response = reply)
