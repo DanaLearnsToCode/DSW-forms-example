@@ -38,7 +38,7 @@ def render_moviesNo():
          reply = "Wow! most people I know play sports, so this is very cool."
          return render_template('response34.html', response = reply)
 
-    @app.route("/response3")    
+@app.route("/response3")    
 def render_response3():
     answer3 = request.args['answer3']
     if answer2 == "horror":
