@@ -23,31 +23,35 @@ def render_response():
 def render_response2():
     answer2 = request.args['answer2']
     if answer2 == "horror":
+        final1 = "horror1'
         reply = "That's cool! My friend was one of the main actors in The Curse of La Llorona. If you haven't watched it it's pretty scary."
         return render_template('response31.html', response = reply)
     if answer2 == "comedy":
+        final1 = "comedy1'
         reply = "I also prefer comedy because I like to laugh, but horror movies are still fun to watch"
         return render_template('response32.html', response = reply)
     if answer2 == "yes":
+         final1 = "yes1'
          reply = "I'm also a sports person."
          return render_template('response33.html', response = reply)
     if answer2 == "no":
+         final1 = "no1'
          reply = "Wow! most people I know play sports, so this is very cool."
          return render_template('response34.html', response = reply)
 
 @app.route("/response3")    
 def render_response3():
     answer3 = request.args['answer3']
-    if answer2 == "horror":
+    if final1 == "horror1":
         reply = "I'll have to watch"+answer3+"sometime, thanks for talking with me."
         return render_template('finalresponse1.html', response = reply)
-    if answer2 == "comedy":
+    if final1 == "comedy1":
         reply = "I'm not sure I have watched"+answer3+",but it must be a good movie. Thanks for talking with me"
         return render_template('finalresponse1.html', response = reply)
-    if answer2 == "yes":
+    if final1 == "yes1":
          reply = "My favorite sport is Surfing, but I should play"+answer3+"sometime. Thanks for talking with me"
          return render_template('finalresponse1.html', response = reply)
-    if answer2 == "no":
+    if final1 == "no1":
          reply = answer3+"sounds pretty fun, thanks for talking with me."
          return render_template('finalresponse1.html', response = reply)
 
