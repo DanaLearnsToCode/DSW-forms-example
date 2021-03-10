@@ -35,7 +35,7 @@ def render_response2():
          reply = "I'm also a sports person."
          return render_template('response33.html', response = reply)
     if answer2 == "no":
-         final1 = "no1'
+         final1 = "no1"
          reply = "Wow! most people I know play sports, so this is very cool."
          return render_template('response34.html', response = reply)
 
