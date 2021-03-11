@@ -42,25 +42,25 @@ def render_moviesNo():
 @app.route("/horrorYes")    
 def render_horroryes():
     answer3 = request.args['answer3']
-    reply = "I'll have to watch"+answer3+"sometime, thanks for talking with me."
+    reply = "I'll have to watch "+answer3+" sometime, thanks for talking with me."
     return render_template('finalresponse1.html', response = reply)
 
 @app.route("/horrorNo")
 def render_horrorNo(): 
     answer3 = request.args['answer3']
-    reply = "I'm not sure I have watched"+answer3+",but it must be a good movie. Thanks for talking with me"
+    reply = "I'm not sure I have watched "+answer3+", but it must be a good movie. Thanks for talking with me"
     return render_template('finalresponse1.html', response = reply)
 
 @app.route("/sportsYes")
 def render_sportsYes():
     answer3 = request.args['answer3']
-    reply = "My favorite sport is Surfing, but I should play"+answer3+"sometime. Thanks for talking with me"
+    reply = "My favorite sport is Surfing, but I should play "+answer3+" sometime. Thanks for talking with me"
     return render_template('finalresponse1.html', response = reply)
 
 @app.route("/sportsNo")
 def render_sportsNo():
     answer3 = request.args['answer3']
-    reply = answer3+"sounds pretty fun, thanks for talking with me."
+    reply = answer3+" sounds pretty fun, thanks for talking with me."
     return render_template('finalresponse1.html', response = reply)
 
     
