@@ -20,9 +20,9 @@ def render_response():
         reply = "Good to know because I do like movies"
         return render_template('response2.html', response = reply)
 
-@app.route("/moviesYes")
+@app.route("/moviesYes", methods=['GET','POST'])
 def render_moviesYes():
-    answer2 = request.args['answer2']
+    answer2 = request.form['answer2']
     if answer2 == "horror":       
         reply = "That's cool! My friend was one of the main actors in The Curse of La Llorona. If you haven't watched it it's pretty scary."
         return render_template('response31.html', response = reply)
@@ -30,9 +30,9 @@ def render_moviesYes():
         reply = "I also prefer comedy because I like to laugh, but horror movies are still fun to watch"
         return render_template('response32.html', response = reply)
     
-@app.route("/moviesNo")
+@app.route("/moviesNo", methods=['GET','POST'])
 def render_moviesNo():
-    answer2 = request.args['answer2']
+    answer2 = request.form['answer2']
     if answer2 == "yes":       
          reply = "I'm also a sports person."
          return render_template('response33.html', response = reply)
