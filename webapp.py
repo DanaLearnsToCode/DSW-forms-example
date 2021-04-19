@@ -4,9 +4,11 @@ app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  
 
 @app.route("/")
 def render_main():
-    return render_template('home.html')
+    
+        return render_template('home.html')
+    else:
    
-@app.route("/response")
+@app.route("/response", , methods=['GET','POST'])
 def render_response():
     answer1 = request.args['answer1'] 
     #The request object stores information about the request sent to the server.
